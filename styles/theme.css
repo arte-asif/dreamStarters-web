@@ -1,0 +1,51 @@
+:root {
+  --color-primary: #8db445;
+  --color-secondary: #69bd46;
+  --color-accent: #231f55;
+  --color-ink: #171531;
+  --color-muted: #63677a;
+  --color-surface: #ffffff;
+  --color-mist: #f5f8ef;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  color: var(--color-ink);
+  background: linear-gradient(180deg, #ffffff 0%, #fbfcf8 44%, #ffffff 100%);
+}
+
+::selection {
+  color: #ffffff;
+  background: var(--color-accent);
+}
+
+.container-px {
+  padding-left: clamp(1rem, 4vw, 4rem);
+  padding-right: clamp(1rem, 4vw, 4rem);
+}
+
+.text-balance {
+  text-wrap: balance;
+}
+
+.glass-panel {
+  background: rgba(255, 255, 255, 0.82);
+  backdrop-filter: blur(18px);
+  border: 1px solid rgba(255, 255, 255, 0.7);
+}
+
+.premium-grid {
+  background-image:
+    linear-gradient(rgba(35, 31, 85, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(35, 31, 85, 0.05) 1px, transparent 1px);
+  background-size: 44px 44px;
+}
+
+.image-overlay {
+  background:
+    linear-gradient(90deg, rgba(35, 31, 85, 0.82), rgba(35, 31, 85, 0.32) 55%, rgba(35, 31, 85, 0.08)),
+    linear-gradient(180deg, rgba(0, 0, 0, 0.05), rgba(35, 31, 85, 0.32));
+}
