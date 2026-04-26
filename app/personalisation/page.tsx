@@ -16,7 +16,7 @@ export default function PersonalisationPage() {
         eyebrow="Personalisation"
         title="Learning plans that move with the child, not the crowd."
         text="DreamStarters uses personalised learning plans, level-based materials and flexible learning spaces so every child can build mastery with confidence."
-        image="/images/eight-cs.png"
+        image="/images/new/milk.jpeg"
       />
       <FeatureGrid
         eyebrow="Personalised learning"

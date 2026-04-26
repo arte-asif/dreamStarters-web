@@ -19,7 +19,7 @@ export default function GalleryPage() {
         eyebrow="Gallery"
         title="Learning moments from the DreamStarters journey."
         text="A glimpse of how play, projects, arts, sports, teamwork and future skills come together."
-        image="/images/foundation-arts-sports.png"
+        image="/images/new/milk.jpeg"
       />
       <SectionWrapper>
         <SectionHeading

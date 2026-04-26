@@ -52,7 +52,7 @@ export default function NexaPage() {
         eyebrow="NEXA by DreamStarters"
         title="Where passion meets future-ready skills."
         text="NEXA is our premium experiential platform focused on extracurricular excellence — combining sports, intellect, creativity and advanced technologies to shape confident, capable individuals."
-        image="/images/nexa/nexa1.jpg"
+        image="/images/new/chess2.jpeg"
       />
 
       {/* Programs */}

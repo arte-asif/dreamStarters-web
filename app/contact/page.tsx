@@ -19,7 +19,7 @@ export default function ContactPage() {
         eyebrow="Contact"
         title="Plan a visit, ask a question or begin admissions."
         text="The DreamStarters team can help you understand programs, campuses, fees, transport, food and the right pathway for your child."
-        image="/images/program-iplay.png"
+        image="/images/new/contact.jpeg"
       />
       <SectionWrapper>
         <div className="grid gap-8 lg:grid-cols-[0.85fr_1.15fr]">

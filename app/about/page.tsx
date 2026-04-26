@@ -21,7 +21,7 @@ export default function AboutPage() {
         eyebrow="About DreamStarters"
         title="A second home where children feel seen, supported and ready for life."
         text="DreamStarters was born from love and real family struggles, then shaped into an experiential school for confident, curious and future-ready learners."
-        image="/images/foundation-arts-sports.png"
+        image="/images/new/about.jpeg"
       />
       <SectionWrapper>
         <SectionHeading

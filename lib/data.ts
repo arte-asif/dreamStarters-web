@@ -40,21 +40,21 @@ export const heroSlides = [
     eyebrow: "DreamStarters Learning Journey",
     title: "From First Steps to Future Leaders",
     subtitle: "Where Learning Meets Life",
-    image: "/images/hero/hero1.jpg",
+    image: "/images/new/games.jpeg",
     href: "/programs"
   },
   {
     eyebrow: "Experiential Learning",
     title: "Children Learn by Doing, Building and Discovering",
     subtitle: "Projects, visits, hands-on activities and guided self-exploration.",
-    image: "/images/hero/hero2.jpg",
+    image: "/images/new/lunch.jpeg",
     href: "/personalisation"
   },
   {
     eyebrow: "Future-Ready Education",
     title: "From the Right Age",
     subtitle: "A complete pathway for confident communicators and independent learners.",
-    image: "/images/hero/hero3.jpg",
+    image: "/images/new/chess2.jpeg",
     href: "/admissions"
   }
 ];

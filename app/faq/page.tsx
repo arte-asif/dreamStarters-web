@@ -17,7 +17,7 @@ export default function FaqPage() {
         eyebrow="FAQ"
         title="Questions families usually ask before visiting."
         text="Quick answers about programs, admissions, future skills, food and the learning model."
-        image="/images/eight-cs.png"
+        image="/images/new/swim.jpeg"
       />
       <SectionWrapper>
         <SectionHeading

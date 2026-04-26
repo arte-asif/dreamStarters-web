@@ -17,7 +17,7 @@ export default function SchoolsPage() {
         eyebrow="Schools"
         title="Accessible early years centres and a spacious main campus."
         text="DreamStarters has iPlay schools across Trivandrum and a calm main campus designed for labs, arts, sports, play and project-based learning."
-        image="/images/program-idiscover.png"
+        image="/images/new/games.jpeg"
       />
       <FeatureGrid
         eyebrow="Campus life"

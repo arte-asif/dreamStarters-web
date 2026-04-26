@@ -21,7 +21,7 @@ export default function AdmissionsPage() {
         eyebrow="Admissions"
         title="Admissions are open for preschool to Grade 5."
         text="The process is personal and transparent: understand the system, visit the school, meet the team, help us know your child and complete the digital application."
-        image="/images/admission-process.png"
+        image="/images/new/games.jpeg"
         cta={{ label: "Call Admissions", href: `tel:${site.phone.replace(/\s/g, "")}` }}
       />
       <SectionWrapper>

@@ -21,7 +21,7 @@ export default function CareersPage() {
         eyebrow="Careers"
         title="Get trained to become a world-class educator."
         text="The iTeach program is an immersive pathway for people who are passionate about child development, learning and teaching."
-        image="/images/program-idiscover.png"
+        image="/images/new/games.jpeg"
         cta={{ label: "Apply for iTeach", href: "/contact" }}
       />
       <SectionWrapper>
