@@ -25,7 +25,6 @@ export default function LaunchPage() {
     const handleKey = (e: KeyboardEvent) => {
       if (e.code === "Space" && !started) {
         setStarted(true);
-        setShowPreloader(true);
       }
     };
 
@@ -33,17 +32,17 @@ export default function LaunchPage() {
     return () => window.removeEventListener("keydown", handleKey);
   }, [started]);
 
-  // ⏳ Countdown + smooth transition
+  // ⏳ Countdown + transition
   useEffect(() => {
     if (!started) return;
 
     if (count === 0) {
-      document.body.style.opacity = "0";
-      document.body.style.transition = "opacity 0.6s ease";
+      setShowPreloader(true);
 
+      // Wait for preloader animation
       setTimeout(() => {
         router.push("/");
-      }, 600);
+      }, 900); // match your preloader duration
 
       return;
     }
@@ -58,7 +57,7 @@ export default function LaunchPage() {
   return (
     <div className="relative min-h-screen flex items-center justify-center bg-black overflow-hidden text-white">
 
-      {/* 🌌 Animated Background Glow */}
+      {/* 🌌 Animated Background */}
       <div className="absolute inset-0">
         <motion.div
           className="absolute inset-0 bg-[radial-gradient(circle_at_center,_#fcce0720,_transparent_70%)]"
@@ -67,7 +66,7 @@ export default function LaunchPage() {
         />
       </div>
 
-      {/* 🔳 Grid Texture */}
+      {/* 🔳 Grid */}
       <div className="absolute inset-0 opacity-20 bg-[linear-gradient(to_right,#ffffff10_1px,transparent_1px),linear-gradient(to_bottom,#ffffff10_1px,transparent_1px)] bg-[size:40px_40px]" />
 
       {/* 🎯 Content */}
@@ -77,46 +76,28 @@ export default function LaunchPage() {
             key="intro"
             initial={{ opacity: 0, scale: 0.96 }}
             animate={{ opacity: 1, scale: 1 }}
-            exit={{ opacity: 0, scale: 1.05 }}
-            transition={{ duration: 0.6 }}
+            exit={{ opacity: 0 }}
             className="z-10 text-center px-6"
           >
             {/* Logo */}
-            <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.7 }}
-            >
-              <Image
-                src="/images/logo-bg-removed.png"
-                alt="DreamStarters"
-                width={260}
-                height={160}
-                className="mx-auto mb-6"
-                priority
-              />
-            </motion.div>
+            <Image
+              src="/images/logo-bg-removed.png"
+              alt="DreamStarters"
+              width={260}
+              height={160}
+              className="mx-auto mb-6"
+              priority
+            />
 
-            {/* Title */}
-            <motion.h1
-              className="text-3xl md:text-5xl font-bold tracking-tight"
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.2 }}
-            >
+            <h1 className="text-3xl md:text-5xl font-bold">
               DreamStarters International
-            </motion.h1>
+            </h1>
 
-            <motion.p
-              className="mt-4 text-slate-300 text-sm md:text-base"
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ delay: 0.4 }}
-            >
+            <p className="mt-4 text-slate-300 text-sm md:text-base">
               The future of learning begins now
-            </motion.p>
+            </p>
 
-            {/* 🔥 Animated Space Hint */}
+            {/* Hint */}
             <motion.div
               className="mt-12 text-sm text-[#fcce07] tracking-widest"
               animate={{ opacity: [0.4, 1, 0.4] }}
@@ -125,21 +106,19 @@ export default function LaunchPage() {
               PRESS SPACE TO LAUNCH
             </motion.div>
 
-            {/* Pulse Indicator */}
             <motion.div
               className="mt-4 h-2 w-2 rounded-full bg-[#fcce07] mx-auto"
               animate={{ scale: [1, 1.8, 1], opacity: [0.5, 1, 0.5] }}
               transition={{ duration: 1.2, repeat: Infinity }}
             />
           </motion.div>
-        ) : (
+        ) : !showPreloader ? (
           <motion.div
             key="countdown"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             className="z-10 text-center"
           >
-            {/* 🔢 Countdown */}
             <motion.div
               key={count}
               initial={{ scale: 0.6, opacity: 0 }}
@@ -155,10 +134,10 @@ export default function LaunchPage() {
               LAUNCHING EXPERIENCE
             </p>
           </motion.div>
-        )}
+        ) : null}
       </AnimatePresence>
 
-      {/* ⚡ Preloader */}
+      {/* ⚡ Preloader AFTER countdown */}
       {showPreloader && <Preloader />}
     </div>
   );
