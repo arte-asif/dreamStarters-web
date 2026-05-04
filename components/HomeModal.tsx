@@ -32,10 +32,10 @@ export default function HomeModal() {
             className="cursor-pointer transform transition duration-300 hover:scale-110 hover:brightness-110"
           >
             <Image
-              src="/images/modal1.png"
+              src="/images/modalNew1.png"
               alt="Option 1"
-              width={180}
-              height={180}
+              width={250}
+              height={280}
               className="object-contain"
               priority
             />
@@ -47,7 +47,7 @@ export default function HomeModal() {
             className="cursor-pointer transform transition duration-300 hover:scale-110 hover:brightness-110"
           >
             <Image
-              src="/images/modalP2.png"
+              src="/images/modalNew2.png"
               alt="Option 2"
               width={250}
               height={280}

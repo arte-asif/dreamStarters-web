@@ -4,14 +4,14 @@ export const site = {
   tagline: "Together we build the future",
   location: "Trivandrum, Kerala",
   phone: "+91 77336 495754",
-  email: "admissions@dreamstarters.school",
+  email: "info@dreamstarters.school",
   description:
     "Premium experiential learning school focusing on AI, robotics, leadership and real-world skills.",
   social: [
-    { label: "Instagram", href: "https://www.instagram.com/" },
-    { label: "Facebook", href: "https://www.facebook.com/" },
+    { label: "Instagram", href: "https://www.instagram.com/dreamstarters.school" },
+    { label: "Facebook", href: "https://www.facebook.com/share/1CbinFRoMU/?mibextid=wwXIfr" },
     { label: "LinkedIn", href: "https://www.linkedin.com/" },
-    { label: "YouTube", href: "https://www.youtube.com/" }
+    { label: "YouTube", href: "https://www.youtube.com/@dreamstarters_school?si=OJbarL9wUGslZoGr" }
   ]
 };
 
@@ -65,7 +65,7 @@ export const programs = [
     title: "iPlay",
     subtitle: "PreKG - Grade 2",
     ages: "2 to 7.5 years",
-    image: "/images/program-iplay.png",
+    image: "/images/new/games.jpeg",
     href: "/programs/iplay",
     summary:
       "A research-backed early years program focused on brain development, phonics, languages, numeracy, science, arts, sport and early technology.",
@@ -87,7 +87,7 @@ export const programs = [
     title: "iDiscover",
     subtitle: "Grade 3 - Grade 7",
     ages: "7.5 to 12.5 years",
-    image: "/images/program-idiscover.png",
+    image: "/images/new/chess2.jpeg",
     href: "/programs/idiscover",
     summary:
       "A project-based middle years pathway where learners complete authentic projects across carpentry, design, farming, robotics, engineering, healthcare and more.",
@@ -109,7 +109,7 @@ export const programs = [
     title: "iLead",
     subtitle: "Grade 8 - Grade 12",
     ages: "12.5 to 17.5 years",
-    image: "/images/program-ilead.png",
+    image: "/images/new/pc.jpeg",
     href: "/programs/ilead",
     summary:
       "A senior pathway that helps learners prepare for careers through Cambridge subject choices, mentorship, internships, portfolios and entrance preparation.",
