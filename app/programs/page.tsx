@@ -18,7 +18,7 @@ export default function ProgramsPage() {
         eyebrow="Programs"
         title="Three pathways. One continuous transformation journey."
         text="DreamStarters is structured to support children from early nurturing to future leadership, without losing continuity between stages."
-        image="/images/program-idiscover.png"
+        image="/images/new/games.jpeg"
         cta={{ label: "Book a Visit", href: "/admissions" }}
       />
       <ProgramsSection />
