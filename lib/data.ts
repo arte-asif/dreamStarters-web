@@ -3,7 +3,7 @@ export const site = {
   shortName: "DreamStarters",
   tagline: "Together we build the future",
   location: "Trivandrum, Kerala",
-  phone: "+91 77336 495754",
+  phone: "+91 7736 495754",
   email: "info@dreamstarters.in",
   description:
     "Premium experiential learning school focusing on AI, robotics, leadership and real-world skills.",
